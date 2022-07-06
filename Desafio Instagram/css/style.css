@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgba(var(--b3f,250,250,250),1);
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.instagram-phone{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram-phone img{
+    height: 50rem;
+}
+
+.instagram-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.formulario{
+    width: 70%;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid lightgray;
+}
+
+.cadastrar{
+    margin-top: 15px;
+    padding: 30px ;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna img{
+    margin: 40px auto;
+    width: 40%;
+}
+
+form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.coluna form input{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    width: 100%;
+    outline: 0;
+}
+
+.coluna form a{
+    padding: 10px;
+    background-color: #0095f6;
+    display: block;
+    width: 100%;
+    margin: 20px auto 0;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.login-facebook{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.login-facebook img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.login{
+    color: #385185;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.forgot{
+    color: rgba(var(--fe0,0,55,107),1);
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.download{
+    text-align: center;
+    margin-top: 20px;
+    width: 70%;
+}
+
+.download span{
+    font-size: 14px;
+}
+
+.download div{
+    display: flex;
+    padding: 20px 40px 0;
+    gap: 10px;
+}
+
+.download div a{
+    width: 50%;
+}
+
+.icones img{
+    width: 100%;
+}
+
+div a{
+    text-decoration: none;
+}
+
+.linha{
+    display: flex;
+    color: rgb(136, 135, 135);
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.linha::before, .linha::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: lightgray;
+}
+
+.linha::before{
+    margin-right: 20px;
+}
+
+.linha::after{
+    margin-left: 20px;
+}
+
+.cadastrar span{
+    font-size: 14px;
+}
+
+.cadastrar a{
+    color: rgba(var(--d69,0,149,246),1);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media (max-width: 875px){
+    .instagram-phone{
+        display: none;
+    }
+
+    .instagram-login{
+        margin: auto;
+        align-items: center;
+        width: 70%;
+    }
+}
+
+@media (max-width: 585px){
+    .instagram-login{
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px){
+    body{
+        background-color: #fff;
+    }
+
+    .formulario{
+        border: none;
+    }
+
+    .coluna > img{
+        width: 60%;
+    }
+}

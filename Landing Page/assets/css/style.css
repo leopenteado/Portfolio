@@ -39,4 +39,10 @@ body {
   margin-top: 50px;
 }
 
+@media (max-width: 450px) {
+  .container1 {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -86,6 +86,7 @@ body {
         justify-content: space-between;
         margin: 0 auto;
         padding: 0 60px;
+        flex-wrap: wrap;
 
         .container-text {
             margin-top: 100px;
@@ -230,10 +231,12 @@ body {
         display: flex;
         margin: 100px auto;
         gap: 40px;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
 
         .box-1 {
             padding: 25px 15px;
+            width: 30%;
         }
 
         .box {
@@ -241,6 +244,7 @@ body {
             border-radius: 5px;
             padding: 50px 25px;
             transition: 0.3s ease-in-out;
+            width: 30%;
 
             &:hover {
                 background-color: #fff;

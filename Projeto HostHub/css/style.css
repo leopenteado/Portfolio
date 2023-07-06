@@ -75,6 +75,7 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   padding: 0 60px;
+  flex-wrap: wrap;
 }
 .principal .container .container-text {
   margin-top: 100px;
@@ -195,16 +196,19 @@ body {
   display: flex;
   margin: 100px auto;
   gap: 40px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .about-us .container .box-1 {
   padding: 25px 15px;
+  width: 30%;
 }
 .about-us .container .box {
   border: 1px solid rgb(230, 230, 230);
   border-radius: 5px;
   padding: 50px 25px;
   transition: 0.3s ease-in-out;
+  width: 30%;
 }
 .about-us .container .box:hover {
   background-color: #fff;

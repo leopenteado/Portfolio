@@ -641,9 +641,43 @@ footer {
     }
 
     .principal{
+        height: 60vh;
 
         .container{
             padding: 0;
+
+            .container-text{
+                padding: 0;
+            }
+        }
+    }
+
+    .custom{
+        margin-top: 50px;
+        padding: 5px 0;
+    }
+
+    .about-us{
+
+        .container{
+            margin: 30px auto;
+        }
+    }
+
+    .top-services{
+        margin-top: 50px;
+        padding: 10px;
+
+        .text-features{
+            margin: 50px auto;
+        }
+    }
+
+    .posts{
+        padding: 0;
+
+        .text-features{
+            margin: 50px auto;
         }
     }
 

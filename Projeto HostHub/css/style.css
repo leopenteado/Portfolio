@@ -529,8 +529,34 @@ footer .copyright .container-icons .icons:hover {
   .header .logo-img {
     max-width: 100px;
   }
+  .principal {
+    height: 60vh;
+  }
   .principal .container {
     padding: 0;
+  }
+  .principal .container .container-text {
+    padding: 0;
+  }
+  .custom {
+    margin-top: 50px;
+    padding: 5px 0;
+  }
+  .about-us .container {
+    margin: 30px auto;
+  }
+  .top-services {
+    margin-top: 50px;
+    padding: 10px;
+  }
+  .top-services .text-features {
+    margin: 50px auto;
+  }
+  .posts {
+    padding: 0;
+  }
+  .posts .text-features {
+    margin: 50px auto;
   }
   footer {
     padding-top: 50px;

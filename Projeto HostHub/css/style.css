@@ -457,6 +457,10 @@ footer .copyright .container-icons .icons:hover {
   .container {
     max-width: 800px;
   }
+  .principal {
+    padding-top: 0;
+    height: 70vh;
+  }
   .principal .container-text {
     margin: 0 auto;
     padding-top: 80px;

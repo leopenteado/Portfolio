@@ -272,7 +272,8 @@ body {
 .top-services .grid-services .container-grid:hover {
   background-color: #fff;
 }
-.top-services .grid-services .container-grid:hover h3, .top-services .grid-services .container-grid:hover p {
+.top-services .grid-services .container-grid:hover h3,
+.top-services .grid-services .container-grid:hover p {
   color: #000;
 }
 .top-services .grid-services .container-grid h3 {
@@ -515,6 +516,18 @@ footer .copyright .container-icons .icons:hover {
   }
 }
 @media only screen and (max-width: 694px) {
+  .header {
+    height: 60px;
+  }
+  .header .container {
+    padding-top: 5px;
+  }
+  .header .logo-img {
+    max-width: 100px;
+  }
+  .principal .container {
+    padding: 0;
+  }
   footer {
     padding-top: 50px;
   }
@@ -554,7 +567,7 @@ footer .copyright .container-icons .icons:hover {
   }
   footer .copyright .container-icons {
     width: 200px;
-    padding-left: 40px;
+    padding-left: 20px;
     padding-bottom: 30px;
     margin-top: 30px;
     margin-left: auto;

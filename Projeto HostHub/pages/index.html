@@ -22,9 +22,20 @@
                     <li><a class="nav-item" href="#">Pages</a></li>
                     <li><a class="nav-item" href="#">Blog</a></li>
                     <li><a class="nav-item" href="#">Contact</a></li>
-                    <i class="fa-light fa-magnifying-glass"></i>
+                    <li><a class="nav-item" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 </ul>
             </div>
+            <i id="menu-hamb" class="fa-solid fa-bars" onclick="menuShow()"></i>
+        </div>
+        <div id="nav-bar-cel">
+            <ul>
+                <li><a class="nav-item-cel" href="#">Home</a></li>
+                <li><a class="nav-item-cel" href="#">About</a></li>
+                <li><a class="nav-item-cel" href="#">Services</a></li>
+                <li><a class="nav-item-cel" href="#">Pages</a></li>
+                <li><a class="nav-item-cel" href="#">Blog</a></li>
+                <li><a class="nav-item-cel" href="#">Contact</a></li>
+            </ul>
         </div>
     </header>
     <section class="principal">
@@ -210,9 +221,9 @@
                     <p>There are many kinds of narratives and organizing principles. Science is driven by evidence
                         gathered in experiments, and by the falsification of extant theories and their</p>
                     <div class="interactions">
-                        <span>4.5k Views</span>
-                        <span>07</span>
-                        <span>362</span>
+                        <span><i class="fa-sharp fa-solid fa-eye"></i>4.5k Views</span>
+                        <span><i class="fa-solid fa-comment-dots"></i>07</span>
+                        <span><i class="fa-sharp fa-solid fa-reply"></i>362</span>
                     </div>
                 </div>
                 <div class="container-grid-posts">
@@ -221,9 +232,9 @@
                     <p>There are many kinds of narratives and organizing principles. Science is driven by evidence
                         gathered in experiments, and by the falsification of extant theories and their</p>
                     <div class="interactions">
-                        <span>4.5k Views</span>
-                        <span>07</span>
-                        <span>362</span>
+                        <span><i class="fa-sharp fa-solid fa-eye"></i>4.5k Views</span>
+                        <span><i class="fa-solid fa-comment-dots"></i>07</span>
+                        <span><i class="fa-sharp fa-solid fa-reply"></i>362</span>
                     </div>
                 </div>
                 <div class="container-grid-posts">
@@ -232,9 +243,9 @@
                     <p>There are many kinds of narratives and organizing principles. Science is driven by evidence
                         gathered in experiments, and by the falsification of extant theories and their</p>
                     <div class="interactions">
-                        <span>4.5k Views</span>
-                        <span>07</span>
-                        <span>362</span>
+                        <span><i class="fa-sharp fa-solid fa-eye"></i>4.5k Views</span>
+                        <span><i class="fa-solid fa-comment-dots"></i>07</span>
+                        <span><i class="fa-sharp fa-solid fa-reply"></i>362</span>
                     </div>
                 </div>
             </div>
@@ -288,6 +299,18 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const navBarCel = document.getElementById('nav-bar-cel');
+        function menuShow(){
+            if(navBarCel.style.display == 'none'){
+                navBarCel.style.display = 'block';
+            } else{
+                navBarCel.style.display = 'none';
+            }
+            
+        }
+    </script>
 </body>
 
 </html>

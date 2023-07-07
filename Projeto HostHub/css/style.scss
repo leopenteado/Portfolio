@@ -73,6 +73,34 @@ body {
             }
         }
     }
+
+    #menu-hamb{
+        display: none;
+    }
+
+    #nav-bar-cel{
+        text-align: center;
+        background-color: #fafcff;
+        padding: 10px 0;
+        display: none;
+
+        ul{
+            list-style: none;
+
+            li{
+                margin-top: 15px;
+
+                .nav-item-cel{
+                    text-decoration: none;
+                    color: black;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    font-weight: bold;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
 }
 
 .principal {
@@ -369,6 +397,13 @@ body {
                 span{
                     font-size: 15px;
 
+                    i{
+                        margin-right: 5px;
+                    }
+
+                    .fa-reply{
+                        transform: rotatey(180deg);
+                    }
                 }
             }
         }
@@ -386,6 +421,8 @@ footer{
     .flex-div{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
     .container-div{
@@ -500,5 +537,151 @@ footer{
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 1160px){
+    .container{
+        max-width: 800px;
+    }
+
+    .principal{
+        .container-text{
+            margin: 0 auto;
+            padding-top: 80px;
+        }
+
+        .container-img{
+            display: none;
+        }
+    }
+
+    footer{
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1014px){
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .header{
+        .container{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .nav-bar{
+            display: none;
+        }
+    
+        #menu-hamb{
+            display: block;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+
+    .container-text{
+        text-align: center;
+    }
+
+    .about-us {
+        .container {
+            display: block;
+            margin: 100px auto;
+            width: 100%;
+            text-align: center;
+    
+            .box-1 {
+                padding: 25px 15px;
+                width: 100%;
+            }
+    
+            .box {
+                border: 1px solid rgb(230, 230, 230);
+                border-radius: 5px;
+                padding: 50px 25px;
+                transition: 0.3s ease-in-out;
+                width: 100%;
+    
+                &:hover {
+                    background-color: #fff;
+                }
+            }
+    
+            h2 {
+                font-size: 40px;
+            }
+    
+            p {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 694px){
+    footer{
+        padding-top: 50px;
+
+        .container{
+            margin: 0 auto;
+            width: 100%;
+            padding: 0;
+            text-align: center;
+        }
+
+        .flex-div{
+            display: block;
+            width: 100%;
+
+            .container-div{
+                width: 100%;
+                display: block;
+                margin-bottom: 40px;
+
+                ul{
+                    margin: 0 auto;
+                    width: 200px;
+                    padding-left: 40px;
+
+                    li{
+                        text-align: left;
+                    }
+                }
+
+                .instagram-feed{
+                    width: 300px;
+                    justify-content: center;
+                    margin-top: 30px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+
+        .copyright{
+            display: block;
+            margin-top: 20px;
+
+            .container-icons{
+                width: 200px;
+                padding-left: 40px;
+                padding-bottom: 30px;
+                margin-top: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 518px){
+    input[type="submit"]{
+        margin-top: 20px;
     }
 }

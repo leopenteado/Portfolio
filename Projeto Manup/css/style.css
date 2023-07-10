@@ -1,0 +1,182 @@
+.principal .container .principal-text button, .header .container .btn-header {
+  background: linear-gradient(120deg, #ee8425 0%, #f9488b 100%), linear-gradient(120deg, #ee8425 0%, #f9488b 100%);
+  width: 180px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #fff;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container .nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+.header .container .nav-menu .nav-item a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.header .container .btn-header a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+.header .container .btn-header a i {
+  transform: rotate(-45deg);
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+.principal {
+  background-image: url(../assets/bg-principal.webp);
+  width: 100%;
+}
+.principal .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.principal .container .principal-text span {
+  color: #f44949;
+  font-size: 20px;
+}
+.principal .container .principal-text h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: normal;
+  margin: 30px 0;
+}
+.about {
+  margin: 100px 0;
+  width: 100%;
+}
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.about .container .about-text {
+  margin-top: 50px;
+}
+.about .container .about-text h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.about .container .about-text p {
+  margin-bottom: 30px;
+  line-height: 30px;
+  color: rgb(80, 80, 80);
+}
+.about .container .about-text ul {
+  list-style-type: none;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.about .container .about-text ul li {
+  color: rgb(80, 80, 80);
+}
+.about .container .about-text ul li i {
+  margin-right: 5px;
+  color: #f44949;
+}
+.about .container .about-text span {
+  border-bottom: 2px solid #f44949;
+}
+.about .container .about-text span a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.speaking {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.speaking h2 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+.speaking p {
+  color: rgb(80, 80, 80);
+  margin-bottom: 60px;
+}
+.speaking .container-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 20%));
+}
+.speaking .container-grid img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.schedule {
+  width: 100%;
+  text-align: center;
+}
+.schedule h2 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+.schedule p:first-child {
+  color: rgb(80, 80, 80);
+  margin-bottom: 60px;
+}
+.schedule .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 20%));
+  justify-content: center;
+  width: 100%;
+  margin: 80px 0;
+  box-shadow: 5px 5px 20px rgb(200, 200, 200);
+}
+.schedule .grid div {
+  border-right: 1px solid rgb(230, 230, 230);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.schedule .grid div:first-of-type {
+  background: linear-gradient(120deg, #ee8425 0%, #f9488b 100%), linear-gradient(120deg, #ee8425 0%, #f9488b 100%);
+}
+.schedule .grid div:last-of-type {
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -178,5 +178,132 @@ body {
 .schedule .grid div:last-of-type {
   border: none;
 }
+.schedule .container-card {
+  border: 1px solid rgb(200, 200, 200);
+  padding: 40px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  text-align: left;
+  transition: 0.3s;
+}
+.schedule .container-card img {
+  border-radius: 50%;
+}
+.schedule .container-card p {
+  margin-bottom: 0;
+  color: #000;
+}
+.schedule .container-card i {
+  color: #f44949;
+  margin-right: 0.5rem;
+}
+.schedule .container-card i:nth-of-type(2) {
+  margin-left: 1rem;
+}
+.schedule .container-card:hover {
+  box-shadow: 10px 10px 20px rgb(200, 200, 200);
+}
+
+.price {
+  width: 100%;
+  background-image: url(../assets/bg-price.webp);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+  margin-top: 6rem;
+  text-align: center;
+}
+.price h2, .price p {
+  color: #fff;
+}
+.price h2 {
+  font-size: 2.5rem;
+}
+.price p {
+  color: rgb(150, 150, 150);
+}
+.price .container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.price .container h3 {
+  text-transform: uppercase;
+}
+.price .container .container-small, .price .container .container-big {
+  background-color: #fff;
+  padding: 3rem 0;
+  width: 28%;
+  position: relative;
+  border-radius: 5px;
+}
+.price .container .container-small a, .price .container .container-big a {
+  position: absolute;
+  bottom: -19px;
+  right: 55px;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  padding: 10px 70px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px rgb(80, 80, 80);
+}
+.price .container .container-small a i, .price .container .container-big a i {
+  color: #f44949;
+  margin-left: 10px;
+}
+.price .container .container-small a:hover, .price .container .container-big a:hover {
+  background: linear-gradient(120deg, #ee8425 0%, #f9488b 100%), linear-gradient(120deg, #ee8425 0%, #f9488b 100%);
+  color: #fff;
+  transition: 0.3s;
+}
+.price .container .container-small a:hover i, .price .container .container-big a:hover i {
+  color: #fff;
+  transition: 0.3s;
+}
+.price .container .container-small .colored, .price .container .container-big .colored {
+  background: linear-gradient(120deg, #ee8425 0%, #f9488b 100%), linear-gradient(120deg, #ee8425 0%, #f9488b 100%);
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.price .container .container-small .colored span, .price .container .container-big .colored span {
+  font-size: 2rem;
+  vertical-align: top;
+}
+.price .container .container-small p:not(.collored), .price .container .container-big p:not(.collored) {
+  line-height: 2.5rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -85,7 +85,7 @@ body {
 }
 .about .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   gap: 100px;
 }
@@ -423,7 +423,7 @@ body {
 footer {
   background-color: #171822;
   width: 100%;
-  padding: 5rem 0;
+  padding: 5rem 0 3.5rem 0;
   color: rgb(120, 120, 120);
 }
 footer .container {
@@ -437,13 +437,31 @@ footer .container div {
 }
 footer .container div a {
   text-decoration: none;
-  color: rgb(120, 120, 120);
+  color: #a0a1b5;
+  transition: 0.3s;
 }
-footer .container .icons {
-  margin-right: 2rem;
-  padding: 0.5rem 1rem;
+footer .container div a:hover {
+  color: #f44949;
+}
+footer .container p i {
+  color: #f44949;
+}
+footer .container p span {
+  color: #a0a1b5;
+  transition: 0.3s;
+  cursor: pointer;
+}
+footer .container p span:hover {
+  color: #f44949;
+}
+footer .container .fa-brands {
+  margin-right: 1rem;
+  padding: 0.7rem 0.8rem;
   border-radius: 50%;
-  border: 1px solid rgb(150, 150, 150);
+  border: 1px solid rgb(100, 100, 100);
+  text-align: center;
+  color: #a3a3ae;
+  font-size: 1rem;
 }
 
 .mt-1 {

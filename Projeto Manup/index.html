@@ -36,6 +36,32 @@
             <button class="btn-header">
                 <a href="#"><i class="fa-sharp fa-solid fa-ticket"></i>Ticket</a>
             </button>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </div>
+        <div id="nav-cel" class="container-cel mt-1">
+            <ul class="nav-menu-cel">
+                <li class="nav-item-cel">
+                    <a href="#">Home</a>
+                </li>
+                <li class="nav-item-cel">
+                    <a href="#">About</a>
+                </li>
+                <li class="nav-item-cel">
+                    <a href="#">Speakers</a>
+                </li>
+                <li class="nav-item-cel">
+                    <a href="#">Schedule</a>
+                </li>
+                <li class="nav-item-cel">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="nav-item-cel">
+                    <a href="#">Contacts</a>
+                </li>
+            </ul>
+            <button class="btn-header-cel">
+                <a href="#"><i class="fa-sharp fa-solid fa-ticket"></i>Ticket</a>
+            </button>
         </div>
     </header>
     <section class="principal">
@@ -276,6 +302,18 @@
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
     </footer>
+
+    <script>
+        const navCel = document.getElementById("nav-cel");
+        
+        function showMenu(){
+            if(navCel.style.display == 'none'){
+                navCel.style.display = 'block';
+            } else{
+                navCel.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 
 </html>

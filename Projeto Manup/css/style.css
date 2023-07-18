@@ -1,4 +1,4 @@
-.principal .container .principal-text button, .header .container .btn-header {
+.principal .container .principal-text button, .header .container-cel .btn-header-cel, .header .container .btn-header {
   background: linear-gradient(120deg, #ee8425 0%, #f9488b 100%), linear-gradient(120deg, #ee8425 0%, #f9488b 100%);
   width: 180px;
   height: 50px;
@@ -54,6 +54,36 @@ body {
   font-weight: bold;
 }
 .header .container .btn-header a i {
+  transform: rotate(-45deg);
+  font-size: 13px;
+  margin-right: 5px;
+}
+.header .container .fa-bars {
+  display: none;
+  font-size: 2rem;
+}
+.header .container-cel {
+  display: none;
+  text-align: center;
+}
+.header .container-cel .nav-menu-cel {
+  list-style: none;
+}
+.header .container-cel .nav-menu-cel .nav-item-cel {
+  margin-bottom: 1rem;
+}
+.header .container-cel .nav-menu-cel .nav-item-cel a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.header .container-cel .btn-header-cel a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+.header .container-cel .btn-header-cel a i {
   transform: rotate(-45deg);
   font-size: 13px;
   margin-right: 5px;
@@ -220,7 +250,6 @@ body {
 .price {
   width: 100%;
   background-image: url(../assets/bg-price.webp);
-  height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -250,6 +279,7 @@ body {
 .price .container .container-big {
   background-color: #fff;
   padding: 3rem 0;
+  min-width: 350px;
   width: 28%;
   position: relative;
   border-radius: 5px;
@@ -258,13 +288,15 @@ body {
 .price .container .container-big a {
   position: absolute;
   bottom: -19px;
-  right: 55px;
+  right: 50px;
   text-decoration: none;
   color: #000;
   background-color: #fff;
-  padding: 10px 70px;
+  padding: 10px 0;
+  width: 15rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 50px;
   box-shadow: 0px 0px 10px rgb(80, 80, 80);
 }
@@ -487,6 +519,71 @@ footer .container .fa-brands {
 
 .center {
   text-align: center;
+}
+
+@media only screen and (max-width: 1280px) {
+  .header,
+  .principal,
+  .about,
+  .speaking,
+  .schedule,
+  .price,
+  .news,
+  .location {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+@media only screen and (max-width: 1240px) {
+  .price > p {
+    margin-bottom: 2rem;
+  }
+  .price .container {
+    display: block;
+    margin: 0 auto;
+  }
+  .price .container div {
+    margin: 0 auto 5rem auto;
+  }
+}
+@media only screen and (max-width: 1054px) {
+  .principal {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .principal .container .principal-text {
+    text-align: center;
+    margin: 0 auto;
+    width: 50rem;
+  }
+  .principal .container img {
+    display: none;
+  }
+  .header .container .nav-menu, .btn-header {
+    display: none;
+  }
+  .header .container .fa-bars {
+    display: block;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .about {
+    margin: 1rem 0 4rem 0;
+  }
+  .about .container {
+    gap: 50px;
+  }
+  .about .container img {
+    display: none;
+  }
+  .about .container .about-text {
+    text-align: center;
+  }
+  .about .container .about-text ul {
+    margin: 0 auto 2rem auto;
+    text-align: left;
+    width: 230px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
